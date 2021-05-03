@@ -10639,7 +10639,7 @@ var environment;
 environment = {
     production: false,
     // apiUrl: 'http://sinhdang.glinkdeployments.com/glaval-api-thuandinh/public'
-    apiUrl: 'http://localhost/glaval/public'
+    apiUrl: 'http://foodthuandinh.herokuapp.com/public'
 };
 
 
