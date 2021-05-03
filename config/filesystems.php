@@ -51,7 +51,6 @@ return [
         'public' => [
             'driver' => 'local',
             'root' => storage_path('app/public'),
-            'url' => env('APP_URL').'/storage',
             'visibility' => 'public',
         ],
 
@@ -63,6 +62,91 @@ return [
             'bucket' => env('AWS_BUCKET'),
             'url' => env('AWS_URL'),
         ],
+
+        'user_avtar' => [
+            'driver' => 'local',
+            'root'   => public_path() . '/uploads/profile',
+        ],
+
+        'login_bg' => [
+            'driver' => 'local',
+            'root'   => public_path() . '/uploads/login_bg',
+        ],
+
+        'company_logo' => [
+            'driver' => 'local',
+            'root'   => public_path() . '/uploads/company_logo',
+        ],
+        
+        'company_sidebar_logo' => [
+            'driver' => 'local',
+            'root'   => public_path() . '/uploads/company_sidebar_logo',
+        ],
+
+        'sidebar_background_images' => [
+            'driver' => 'local',
+            'root'   => public_path() . '/uploads/sidebar_background_images',
+        ],
+
+        'translation' => [
+            'driver' => 'local',
+            'root'   => public_path() . '/uploads/translation',
+        ],
+
+        'project_uploads' => [
+            'driver' => 'local',
+            'root'   => public_path() . '/uploads/project',
+        ],
+
+        'project_attachment' => [
+            'driver' => 'local',
+            'root'   => public_path() . '/uploads/project_attachment',
+        ],
+
+        'task_attachment' => [
+            'driver' => 'local',
+            'root'   => public_path() . '/uploads/task_attachment',
+        ],
+
+        'defect' => [
+            'driver' => 'local',
+            'root'   => public_path() . '/uploads/defect',
+        ],
+
+        'defect_attachment' => [
+            'driver' => 'local',
+            'root'   => public_path() . '/uploads/defect_attachment',
+        ],
+
+        'incident_attachment' => [
+            'driver' => 'local',
+            'root'   => public_path() . '/uploads/incident_attachment',
+        ],
+
+        'category_attachment' => [
+            'driver' => 'local',
+            'root'   => public_path() . '/uploads/category_attachment',
+        ],
+        
+        'article_attachment' => [
+            'driver' => 'local',
+            'root'   => public_path() . '/uploads/article_attachment',
+        ],
+
+        'leave_attachment' => [
+            'driver' => 'local',
+            'root'   => public_path() . '/uploads/leave_attachment',
+        ],
+
+        'estimate_logo' => [
+            'driver' => 'local',
+            'root'   => public_path() . '/uploads/estimate_logo',
+        ],
+
+        'invoice_logo' => [
+            'driver' => 'local',
+            'root'   => public_path() . '/uploads/invoice_logo',
+        ]
 
     ],
 

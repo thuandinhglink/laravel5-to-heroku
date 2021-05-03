@@ -128,9 +128,35 @@ return [
     */
 
     'custom' => [
-        'attribute-name' => [
-            'rule-name' => 'custom-message',
+        'rules' => [
+            'emails' => 'The :attribute must be a valid email address.',
+            'emailsexists' => 'The :attribute is invalid.',
+            'estimatedhours' => 'The :attribute allow only digits, 2 digits after colon(less than 60) without any special characters.',
+            'password' => 'The :attribute contain at least one uppercase,lowercase,number,special character.',
+            'phone' => 'Please enter a valid phone number.'
         ],
+        'messages' => [
+            'message1' => 'User has not been created.',
+            'invalid_login' => 'Incorrect username/email or password.',
+            'email_not_verified' => 'Your email is not verified yet, please check your inbox and verify your email.',
+            'account_not_activated' => 'Your account is not activated yet, contact to site admin.',
+            'verification_not_found' => 'User or verification code has not been found.',
+            'category_logo' => [
+                'required' => 'The category logo field is required.'
+            ],
+            'firstname' => [
+                'unique' => 'The firstname lastname has already been taken.'
+            ]
+        ],
+        'assigned_group_id' => [
+            'required' => 'Please select at least one group.'
+        ],
+        'billing_type' => [
+            'integer' => 'The billing type value is invalid.'
+        ],
+        'company_zipcode' => [
+            'integer' => 'The zipcode must be an digits.'
+        ]
     ],
 
     /*
@@ -144,6 +170,14 @@ return [
     |
     */
 
-    'attributes' => [],
+    'attributes' => [
+        'clients.company_email' => 'company email',
+        'clients.company_mobile' => 'mobile',
+        'clients.company_phone' => 'phone',
+        'clients.website' => 'website',
+        'clients.company_zipcode' => 'zipcode',
+        'project_id' => 'project',
+        'file_name' => 'file title',
+    ],
 
 ];

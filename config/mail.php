@@ -60,6 +60,11 @@ return [
         'name' => env('MAIL_FROM_NAME', 'Example'),
     ],
 
+    // 'to' => [
+    //     'address' => 'milan@chetsapp.com',
+    //     'name' => 'Milan Unjiya'
+    // ],
+
     /*
     |--------------------------------------------------------------------------
     | E-Mail Encryption Protocol
